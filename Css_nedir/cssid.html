@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta  charset="utf-8">
+    <title>2 Column Frames Layout &mdash; Left Menu</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            line-height: 1.5em;
+            max-height: 100%;
+            font-family:"sans-serif";
+            height: 100%;
+        }
+        main{
+            position: fixed;
+            right: 0;
+            left: 260px;
+            bottom: 0;
+            overflow: auto;
+            background: white;
+            top: 0;
+        }
+        #nav{
+            position: absolute;
+            width:200px;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            overflow: hidden;
+            background: greenyellow;
+        }
+        .innertube{
+            margin: 20px;
+        }
+
+        p {
+            color:black;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        * html body{
+            padding: 0 0 0 230px;
+        }
+
+        * html main{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<main>
+    <div class="innertube">
+       <h1>Class Kullanımı</h1>
+       <p> Bir HTML kaynağına baktığınızda bir element (tag) özelliği olarak class="stil"
+        şeklinde bir özellik belirtildiğini görebilirsiniz. Peki neden buna gerek duymuşlar?
+           Örneğin aşağıdaki HTML kodunu inceleyelim:</p>
+
+        <p style="font-weight: bold; border: solid 1px red; padding: 10px; border-radius: 10px" >
+            .stil {
+            font: 10pt Tahoma, Verdana;
+            color: blue;
+            }</p>
+
+        <p><h2>ID Kullanımı</h2>
+        ID özelliği ile de stiller yaratabiliriz. CLASS'tan farklı yanları:
+
+        Sadece tek bir elementte kullanılabilir.
+        Aynı id değeri iki elemente verilemez (Her id sadece tek bir elementte kullanılabilir).
+        Stil dosyamızda CLASS'da . (nokta) kullanırdık, ancak id özelliğine göre stilleme yapacaksak # (diyez) kullanırız.
+        Şimdi bu anlattıklarımızı örnek üzerinde görelim:
+        <p style="font-weight: bold; border: solid 1px red; padding: 10px; border-radius: 10px" >
+        #stil {
+        font: 10pt Tahoma, Verdana;
+        color: blue;
+        }
+
+    </p>
+
+
+
+    </div>
+</main>
+
+<nav id="nav">
+    <div class="innertube">
+
+        <h3>Temel Bilgiler</h3>
+        <ul>
+            <li><a href="still.html">CSS Nedir</a></li>
+            <li><a href="csskodyapisi.html">CSS Kod Yapısı</a></li>
+            <li><a href="#">CSS ID ve Class Seçimi</a></li>
+            <li><a href="cssnasileklenir.html">CSS Nasıl Eklenir?</a></li>
+
+        </ul>
+        <h3>CSS Stilleri</h3>
+        <ul>
+            <li><a href="cssarkaplan.html">CSS Arkaplanlar</a></li></a></li>
+            <li><a href="cssyazilar.html">CSS Yazılar</a></li>
+            <li><a href="cssyazitipleri.html">CSS Yazı Tipleri</a></li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta  charset="utf-8">
+   <title>2 Column Frames Layout &mdash; Left Menu</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            line-height: 1.5em;
+            max-height: 100%;
+            font-family:"sans-serif";
+            height: 100%;
+        }
+        main{
+            position: fixed;
+            right: 0;
+            left: 260px;
+            bottom: 0;
+            overflow: auto;
+            background: white;
+            top: 0;
+        }
+        #nav{
+            position: absolute;
+            width:200px;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            overflow: hidden;
+            background: greenyellow;
+        }
+        .innertube{
+            margin: 20px;
+        }
+
+        p {
+            color:black;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        * html body{
+            padding: 0 0 0 230px;
+        }
+
+        * html main{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<main>
+    <div class="innertube">
+
+        <h1>CSS NEDİR?</h1>
+
+        <p>Bilindiği üzere HTML metin biçimlendirme konusunda sitenin birçok farklı noktası adına fazla seçenek imkânı verir. CSS programı ise bu seçeneği daha üst düzey geniş bir çapta, fırsat olanakları ile sunmaktadır. Uzun ismi ile (Cascading Style Sheets) olarak bilinen ve Türkçe anlamı olarak ise Stil Şablon adıyla isimlendirilmiş bu sistem site bünyesindeki her sayfa adına daha geniş bir seçenek dünyası içerisinde evrensel şablonlar hazırlama olanağı verir.<center><img src="pictures.jpg"border="3"height="150" width="175"/></center>  <p> Diğer bir deyişle örneğin her hangi bir harf ele alınacak olursa bu harfin; büyüklüğünü, font ya da rengi gibi daha birçok farklı özelliğini detaylı bir şekilde değiştirme fırsatı vermektedir. CSS olarak bu sistemin en göze çarpan noktası ise özgün bir biçimde esnek kullanım imkânıdır. Genel açıdan bakmak gerekirse aslında bir web sitesi içerisindeki tüm sayfalar adına çok fazla font ya da renk değişimine gerek olmaz. Bu noktada CSS’nin buradaki ana görevi tüm bu işlemleri her sayfada tek tek işlemek yerine web sayfaları üzerinde tek seferde yapmak mümkündür. Bunun en büyük ayrıcalıklarından biri ise güncelleme esnasında onca site sayfasında yapılacak olan bütün bu değişiklerle ayrı ayrı uğraşılmaz.</p>
+        </p>
+
+    </div>
+</main>
+
+<nav id="nav">
+    <div class="innertube">
+
+        <h3>Temel Bilgiler</h3>
+        <ul>
+            <li><a href="#">CSS Nedir</a></li>
+            <li><a href="csskodyapisi.html">CSS Kod Yapısı</a></li>
+            <li><a href="cssid.html">CSS ID ve Class Seçimi</a></li>
+            <li><a href="cssnasileklenir.html">CSS Nasıl Eklenir?</a></li>
+
+
+        </ul>
+        <h3>CSS Stilleri</h3>
+        <ul>
+            <li><a href="cssarkaplan.html">CSS Arkaplanlar</a></li></a></li>
+            <li><a href="cssyazilar.html">CSS Yazılar</a></li>
+            <li><a href="cssyazitipleri.html">CSS Yazı Tipleri</a></li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>

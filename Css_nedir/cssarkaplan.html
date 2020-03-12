@@ -1,0 +1,102 @@
+<html>
+<head>
+    <meta  charset="utf-8">
+    <title>2 Column Frames Layout &mdash; Left Menu</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            line-height: 1.5em;
+            max-height: 100%;
+            font-family:"sans-serif";
+            height: 100%;
+        }
+        main{
+            position: fixed;
+            right: 0;
+            left: 260px;
+            bottom: 0;
+            overflow: auto;
+            background: white;
+            top: 0;
+        }
+        #nav{
+            position: absolute;
+            width:200px;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            overflow: hidden;
+            background: greenyellow;
+        }
+        .innertube{
+            margin: 20px;
+        }
+
+        p {
+            color:black;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        * html body{
+            padding: 0 0 0 230px;
+        }
+
+        * html main{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<main>
+    <div class="innertube">
+        <h1>CSS'de Renk İfadeleri</h1>
+        <p>CSS dosyamızda yer yer renkleri belirtmemiz gerekebilir. Bunun için çeşitli yollar var. Bunlardan en çok kullanılan üç tanesi:
+
+        <p>Onaltılık (Hex) Renkler</p>
+        <p>RGB (Kırmızı, Yeşil, Mavi) Renkler</p>
+        <p>Tarayıcı Renk İsimleri</p>
+        </p>
+    </div>
+</main>
+
+<nav id="nav">
+    <div class="innertube">
+
+        <h3>Temel Bilgiler</h3>
+        <ul>
+            <li><a href="still.html">CSS Nedir</a></li>
+            <li><a href="csskodyapisi.html">CSS Kod Yapısı</a></li>
+            <li><a href="cssid.html">CSS ID ve Class Seçimi</a></li>
+            <li><a href="cssnasileklenir.html">CSS Nasıl Eklenir?</a></li>
+
+
+        </ul>
+        <h3>CSS Stilleri</h3>
+        <ul>
+            <li><a href="#">CSS Arkaplanlar</a></li>
+            <li><a href="cssyazilar.html">CSS Yazılar</a></li>
+            <li><a href="cssyazitipleri.html">CSS Yazı Tipleri</a></li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
